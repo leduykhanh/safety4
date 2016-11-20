@@ -35,7 +35,7 @@ body {
     <div class="container">
         <div class="row">
         <div class="col-sm-2">
-        <div class="logo"><a href="index.php"><img src="images/logo.jpg"/></a></div>
+        <div class="logo"><a href="index.php"><img src="images/risklogo.png"/></a></div>
         </div>
         <div class="col-sm-10">
         <span class="logout">
