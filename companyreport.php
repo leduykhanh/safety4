@@ -107,7 +107,7 @@ td p{
     <h1>Inventory of Work Activities</h1>
     <table id="risk_register_2" style="width:100%;">
         <tr >
-                    <td rowspan="1" colspan="4" style="width:75%"><b>Department:Armada Aluminum Renovation Construction Pte Ltd</b></td>
+                    <td rowspan="1" colspan="4" style="width:75%"><b>Department:QE Safety Pte Ltd</b></td>
                     <td rowspan="1" colspan="1" style="width:25%"><b>Date <?php echo $date = date('d-m-Y', strtotime($risk['createdDate']));?></b></td>
         </tr>
          <tr style="background-color:#817F88; color:white;">
@@ -213,7 +213,7 @@ td p{
             ?>
             <tr >
                     <td rowspan="1" colspan="1" style="width:15%;vertical-align: middle;">Department:</td>
-                    <td rowspan="1" colspan="1" style="width:20%;vertical-align: middle;">Armada Aluminum Renovation Construction Pte Ltd</td>
+                    <td rowspan="1" colspan="1" style="width:20%;vertical-align: middle;">QE Safety Pte Ltd</td>
                     <td rowspan="1" colspan="1" style="width:25%;vertical-align: middle;">RA Leader :<?php echo $valueAllUser['name'];?> <?php echo '<img width="40" src="staff/'.$valueAllUser["signature"].'"/>'; ?></td>
                     <td rowspan="3" colspan="1" style="width:15%;vertical-align: middle;">Approved by:Signature:</td>
                     <td rowspan="3" colspan="1" style="width:15%;vertical-align: middle;">
@@ -231,7 +231,10 @@ td p{
                      <td rowspan="1" colspan="1" style="width:20%"><?php echo wordwrap ($risk['process'], 15, "\n", 1);?></td>
                      <td rowspan="1" colspan="1" style="width:25%">
                        RA Member 1: <?php $raMember = mysqli_fetch_assoc($resultlRAMember); echo $raMembers[$raMember['name']];
-                       if($raMember['name']!==NULL) echo "<img width='40' src='staff/".$raSinatures[$raMember['name']]."' />";
+                       if($raMember['name']!==NULL) {
+                         echo "(".$raDesignations[$raMember['name']].")";
+                         echo "<img width='40' src='staff/".$raSinatures[$raMember['name']]."' />";
+                       }
                        ?>
                      </td>
                 </tr>
@@ -240,7 +243,10 @@ td p{
                      <td rowspan="1" colspan="1" style="width:20%" ><?php echo $risk['location'];?></td>
                      <td rowspan="1" colspan="1" style="width:25%">
                        RA Member 2: <?php $raMember = mysqli_fetch_assoc($resultlRAMember); echo $raMembers[$raMember['name']];
-                       if($raMember['name']!==NULL) echo "<img width='40' src='staff/".$raSinatures[$raMember['name']]."' />";
+                       if($raMember['name']!==NULL) {
+                         echo "(".$raDesignations[$raMember['name']].")";
+                         echo "<img width='40' src='staff/".$raSinatures[$raMember['name']]."' />";
+                       }
                        ?></td>
                 </tr>
 

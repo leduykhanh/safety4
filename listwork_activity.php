@@ -60,6 +60,7 @@ $afterSevenYears = date('Y-m-d H:i:s', strtotime('+3 years'));
                 //get count
               //0 outstanding 1 for draft 2 approved 3 archive
                     $sqlOutStanding = "SELECT * FROM riskassessment where status = 0";
+                    mysqli_query($con,"CALL archive(1)");
                     $resultlOutStanding = mysqli_query($con, $sqlOutStanding);
                     $outStandingRow= mysqli_num_rows($resultlOutStanding);
 
@@ -94,7 +95,7 @@ $afterSevenYears = date('Y-m-d H:i:s', strtotime('+3 years'));
    <div class="claer-fix"></div>
 
     <div class="row"  style="padding-bottom: 10px;">
-    		<div class="col-sm-5" style="text-align:left; padding:0px"><strong>Armada Aluminum Renovation Construction Pte Ltd</strong></div>
+    		<div class="col-sm-5" style="text-align:left; padding:0px"><strong>QE Safety Pte Ltd</strong></div>
             <div class="col-sm-7" style="padding:0px; text-align:right;">
 
                           <?php

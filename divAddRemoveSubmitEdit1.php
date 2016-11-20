@@ -111,7 +111,7 @@ else
                           <div class="col-sm-6">
 							<div class="row">
                             <label class="col-sm-4">Company:</label>
-                            <label class="col-sm-8">Armada Aluminum Renovation Construction Pte Ltd</label>
+                            <label class="col-sm-8">QE Safety Pte Ltd</label>
                             </div>
                           </div>
 

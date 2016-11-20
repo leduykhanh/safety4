@@ -10,7 +10,7 @@
 $dbHost = 'localhost';
 $dbUser = 'root';//'rocketiv_risk';
 $dbPass = '';//'admin@123';
-$dbName = 'safety3';//'rocketiv_riskmanagement';
+$dbName = 'safety4';//'rocketiv_riskmanagement';
 $con = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName)
         or die('Error Connecting to MySQL DataBase');
 

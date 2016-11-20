@@ -4,10 +4,14 @@ $raMembers = array(
 	"name2" => "Liang Kan Fat",
 	"" => ""
 );
+$raDesignations = array(
+	"name1" => "Manager",
+	"name2" => "Foreman",
+	"" => ""
+);
 $raSinatures = array(
 	"name1" => "chan.png",
 	"name2" => "fat.png",
-	"" => ""
 );
 $harzard = array(
 	"w_h_l_3m"	=> "Hazard -Working at height (less than 3m)",
