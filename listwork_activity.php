@@ -95,7 +95,7 @@ $afterSevenYears = date('Y-m-d H:i:s', strtotime('+3 years'));
    <div class="claer-fix"></div>
 
     <div class="row"  style="padding-bottom: 10px;">
-    		<div class="col-sm-5" style="text-align:left; padding:0px"><strong>QE Safety Pte Ltd</strong></div>
+    		<div class="col-sm-5" style="text-align:left; padding:0px"><strong>CAK & FG Survey Pte Ltd</strong></div>
             <div class="col-sm-7" style="padding:0px; text-align:right;">
 
                           <?php
@@ -342,7 +342,7 @@ $afterSevenYears = date('Y-m-d H:i:s', strtotime('+3 years'));
                         {
 
 
-					   echo $creationDate =  date('d-m-Y', strtotime('+'.$row["expiry_date"].' years', strtotime($row['approveDate'])));
+					   echo $creationDate =  date('d-m-Y', strtotime('+'.$row["expiry_date"].' years', strtotime($row['createdDate'])));
 						}
                         ?></td>
 
